@@ -1,0 +1,425 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>小杰杰❤大涛涛</title>	    
+        <link type="text/css" rel="stylesheet" href="./renxi/default.css">
+		<script type="text/javascript" src="./renxi/jquery.min.js"></script>
+		<script type="text/javascript" src="./renxi/jscex.min.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-parser.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-jit.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-builderbase.min.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-async.min.js"></script>
+		<script type="text/javascript" src="./renxi/jscex-async-powerpack.min.js"></script>
+		<script type="text/javascript" src="./renxi/functions.js" charset="utf-8"></script>
+		<script type="text/javascript" src="./renxi/love.js" charset="utf-8"></script>
+	    <style type="text/css">
+<!--
+.STYLE1 {color: #666666}
+-->
+        </style>
+<SCRIPT language=javascript>
+<!--
+calendar = new Date();
+day = calendar.getDay();
+month = calendar.getMonth();
+date = calendar.getDate();
+year = calendar.getYear();
+if (year>100) year = 1900 + year;
+cent = parseInt(year/100);
+g = year % 19;
+k = parseInt((cent - 17)/25);
+i = (cent - parseInt(cent/4) - parseInt((cent - k)/3) + 19*g + 15) % 30;
+i = i - parseInt(i/28)*(1 - parseInt(i/28)*parseInt(29/(i+1))*parseInt((21-g)/11));
+j = (year + parseInt(year/4) + i + 2 - cent + parseInt(cent/4)) % 7;
+l = i - j;
+emonth = 3 + parseInt((l + 40)/44);
+edate = l + 28 - 31*parseInt((emonth/4));
+emonth--;
+var dayname = new Array ("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");
+var monthname = 
+new Array ("1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月" );
+document.write("<font color=#0066CC>"+year +"年");
+document.write(monthname[month]);
+document.write(date + "日");
+document.write(dayname[day]+" "+"</font>");
+// January(节日)                                ！！！！！！！！！！！！所有节日的月份要减一个月哦！！！！！！！！！！
+document.write("<font color=#0066CC>"+" 今天是： "+"<font color=FF0000>");
+if ((month == 0) && (date == 1)) document.write("元旦节， ");
+if ((month == 0) && (date == 6)) document.write("中国第13亿人口日， ");
+if ((month == 0) && (date == 8)) document.write("周恩来逝世纪念日， ");
+if ((month == 0) && (date == 21)) document.write("列宁逝世纪念日， ");
+if ((month == 1) && (date == 2)) document.write("世界湿地日， ");
+if ((month == 1) && (date == 7)) document.write("京汉铁路罢工纪念日， ");
+if ((month == 1) && (date == 10)) document.write("国际气象节， ");
+if ((month == 1) && (date == 14)) document.write("西方情人节， ");
+if ((month == 1) && (date == 15)) document.write("中国12亿人口日， ");
+if ((month == 1) && (date == 19)) document.write("邓小平逝世纪念日， ");
+if ((month == 1) && (date == 21)) document.write("反对殖民制度斗争日， ");
+if ((month == 1) && (date == 21)) document.write("国际母语日， ");
+if ((month == 1) && (date == 24)) document.write("第三世界青年日， ");
+if ((month == 1) && (date == 28)) document.write("世界居住条件调查日， ");
+if ((month == 2) && (date == 1)) document.write("国际海豹日， ");
+if ((month == 2) && (date == 3)) document.write("全国爱耳日， ");
+if ((month == 2) && (date == 5)) document.write("周恩来诞辰纪念日， ");
+if ((month == 2) && (date == 5)) document.write("“向雷锋同志学习”纪念日， ");
+if ((month == 2) && (date == 5)) document.write("中国青年志愿者服务日， ");
+if ((month == 2) && (date == 8)) document.write("国际劳动妇女节， ");
+if ((month == 2) && (date == 12)) document.write("孙中山逝世纪念日， ");
+if ((month == 2) && (date == 12)) document.write("中国植树节， ");
+if ((month == 2) && (date == 14)) document.write("马克思逝世纪念日， ");
+if ((month == 2) && (date == 14)) document.write("国际警察日， ");
+if ((month == 2) && (date == 15)) document.write("国际消费者权益日， ");
+if ((month == 2) && (date == 16)) document.write("手拉手情系贫困小伙伴全国统一行动日， ");
+if ((month == 2) && (date == 17)) document.write("国际航海日， ");
+if ((month == 2) && (date == 17)) document.write("中国国医节， ");
+if ((month == 2) && (date == 18)) document.write("全国科技人才活动日， ");
+if ((month == 2) && (date == 21)) document.write("世界森林日， ");
+if ((month == 2) && (date == 21)) document.write("消除种族歧视国际日， ");
+if ((month == 2) && (date == 21)) document.write("世界儿歌日， ");
+if ((month == 2) && (date == 21)) document.write("世界睡眠日， ");
+if ((month == 2) && (date == 22)) document.write("世界水日， ");
+if ((month == 2) && (date == 23)) document.write("世界气象日， ");
+if ((month == 2) && (date == 24)) document.write("世界防治结核病日， ");
+if ((month == 2) && (date == 30)) document.write("巴勒斯坦国土日， ");
+if ((month == 3) && (date == 1)) document.write("国际愚人节， ");
+if ((month == 3) && (date == 2)) document.write("国际儿童图书日， ");
+if ((month == 3) && (date == 7)) document.write("世界卫生日， ");
+if ((month == 3) && (date == 15)) document.write("非洲自由日， ");
+if ((month == 3) && (date == 21)) document.write("全国企业家活动日， ");
+if ((month == 3) && (date == 22)) document.write("列宁诞辰纪念日， ");
+if ((month == 3) && (date == 22)) document.write("世界地球日， ");
+if ((month == 3) && (date == 22)) document.write("世界法律日， ");
+if ((month == 3) && (date == 23)) document.write("世界图书和版权日， ");
+if ((month == 3) && (date == 24)) document.write("世界青年反对殖民主义日， ");
+if ((month == 3) && (date == 24)) document.write("亚非新闻工作者日， ");
+if ((month == 3) && (date == 25)) document.write("全国儿童预防接种宣传日， ");
+if ((month == 3) && (date == 26)) document.write("世界知识产权日， ");
+if ((month == 3) && (date == 27)) document.write("世界平面设计日， ");
+if ((month == 3) && (date == 30)) document.write("全国交通安全反思日， ");
+if ((month == 4) && (date == 1)) document.write("国际劳动节， ");
+if ((month == 4) && (date == 3)) document.write("世界新闻自由日， ");
+if ((month == 4) && (date == 4)) document.write("中国青年节， ");
+if ((month == 4) && (date == 4)) document.write("五四运动纪念日， ");
+if ((month == 4) && (date == 5)) document.write("马克思诞辰纪念日， ");
+if ((month == 4) && (date == 8)) document.write("世界红十字日， ");
+if ((month == 4) && (date == 8)) document.write("世界微笑日， ");
+if ((month == 4) && (date == 12)) document.write("国际护士节， ");
+if ((month == 4) && (date == 15)) document.write("全国碘缺乏病防治日， ");
+if ((month == 4) && (date == 15)) document.write("国际家庭（咨询）日， ");
+if ((month == 4) && (date == 17)) document.write("世界电信日， ");
+if ((month == 4) && (date == 18)) document.write("国际博物馆日， ");
+if ((month == 4) && (date == 20)) document.write("全国母乳喂养宣传日， ");
+if ((month == 4) && (date == 20)) document.write("中国学生营养日， ");
+if ((month == 4) && (date == 22)) document.write("生物多样性国际日， ");
+if ((month == 4) && (date == 25)) document.write("非洲解放日， ");
+if ((month == 4) && (date == 26)) document.write("世界向人体条件挑战日， ");
+if ((month == 4) && (date == 27)) document.write("上海解放日， ");
+if ((month == 4) && (date == 30)) document.write("“五卅”反对帝国主义运动纪念日， ");
+if ((month == 4) && (date == 31)) document.write("世界无烟日， ");
+if ((month == 5) && (date == 1)) document.write("国际儿童节， ");
+if ((month == 5) && (date == 4)) document.write("受侵略戕害的无辜儿童国际日， ");
+if ((month == 5) && (date == 5)) document.write("世界环境日， ");
+if ((month == 5) && (date == 6)) document.write("全国爱眼日， ");
+if ((month == 5) && (date == 11)) document.write("中国人口日， ");
+if ((month == 5) && (date == 17)) document.write("世界防止荒漠化和干旱日， ");
+if ((month == 5) && (date == 20)) document.write("世界难民日， ");
+if ((month == 5) && (date == 22)) document.write("中国儿童慈善活动日， ");
+if ((month == 5) && (date == 23)) document.write("国际奥林匹克日， ");
+if ((month == 5) && (date == 23)) document.write("世界手球日， ");
+if ((month == 5) && (date == 25)) document.write("全国土地日， ");
+if ((month == 5) && (date == 26)) document.write("国际禁毒日， ");
+if ((month == 5) && (date == 26)) document.write("禁止药物滥用和非法贩运国际日， ");
+if ((month == 5) && (date == 26)) document.write("国际宪章日， ");
+if ((month == 5) && (date == 26)) document.write("支援酷刑受害者国际日， ");
+if ((month == 6) && (date == 1)) document.write("中国共产党诞生日， ");
+if ((month == 6) && (date == 1)) document.write("香港回归纪念日， ");
+if ((month == 6) && (date == 1)) document.write("国际建筑日， ");
+if ((month == 6) && (date == 1)) document.write("亚洲30亿人口日， ");
+if ((month == 6) && (date == 2)) document.write("国际体育记者日， ");
+if ((month == 6) && (date == 7)) document.write("中国人民抗日战争纪念日， ");
+if ((month == 6) && (date == 11)) document.write("世界人口日， ");
+if ((month == 6) && (date == 11)) document.write("中国航海节， ");
+if ((month == 6) && (date == 26)) document.write("世界语（言）创立日， ");
+if ((month == 6) && (date == 31)) document.write("非洲妇女日， ");
+if ((month == 7) && (date == 1)) document.write("中国人民解放军建军节， ");
+if ((month == 7) && (date == 5)) document.write("恩格斯逝世纪念日， ");
+if ((month == 7) && (date == 6)) document.write("国际电影节， ");
+if ((month == 7) && (date == 8)) document.write("中国男子节， ");
+if ((month == 7) && (date == 9)) document.write("世界土著居民国际日， ");
+if ((month == 7) && (date == 12)) document.write("国际青年日， ");
+if ((month == 7) && (date == 13)) document.write("国际左撇子日， ");
+if ((month == 7) && (date == 15)) document.write("日本正式宣布无条件投降日， ");
+if ((month == 7) && (date == 22)) document.write("邓小平诞辰纪念日， ");
+if ((month == 7) && (date == 23)) document.write("贩卖黑奴及其废除的国际纪念日， ");
+if ((month == 7) && (date == 26)) document.write("全国律师咨询日， ");
+if ((month == 8) && (date == 1)) document.write("全国中小学开学日， ");
+if ((month == 8) && (date == 3)) document.write("中国抗日战争胜利纪念日， ");
+if ((month == 8) && (date == 8)) document.write("国际新闻工作者日， ");
+if ((month == 8) && (date == 8)) document.write("世界扫盲日， ");
+if ((month == 8) && (date == 9)) document.write("毛泽东逝世纪念日， ");
+if ((month == 8) && (date == 10)) document.write("中国教师节， ");
+if ((month == 8) && (date == 14)) document.write("世界清洁地球日， ");
+if ((month == 8) && (date == 16)) document.write("国际臭氧层保护日， ");
+if ((month == 8) && (date == 18)) document.write("“九一八”事变纪念日， ");
+if ((month == 8) && (date == 20)) document.write("全国爱牙日， ");
+if ((month == 8) && (date == 21)) document.write("国际和平日， ");
+if ((month == 8) && (date == 21)) document.write("世界老年性痴呆宣传日， ");
+if ((month == 8) && (date == 27)) document.write("世界旅游日， ");
+if ((month == 9) && (date == 1)) document.write("国庆节， ");
+if ((month == 9) && (date == 1)) document.write("国际音乐日， ");
+if ((month == 9) && (date == 1)) document.write("国际老年人日， ");
+if ((month == 9) && (date == 4)) document.write("世界动物日， ");
+if ((month == 9) && (date == 5)) document.write("世界教师日， ");
+if ((month == 9) && (date == 9)) document.write("世界邮政日， ");
+if ((month == 9) && (date == 10)) document.write("辛亥革命纪念日， ");
+if ((month == 9) && (date == 10)) document.write("世界心理健康日， ");
+if ((month == 9) && (date == 11)) document.write("声援南非政治犯日， ");
+if ((month == 9) && (date == 11)) document.write("世界镇痛日， ");
+if ((month == 9) && (date == 12)) document.write("世界60亿人口日， ");
+if ((month == 9) && (date == 13)) document.write("中国少年先锋队诞辰日， ");
+if ((month == 9) && (date == 14)) document.write("世界标准日， ");
+if ((month == 9) && (date == 15)) document.write("国际盲人节， ");
+if ((month == 9) && (date == 16)) document.write("世界粮食日， ");
+if ((month == 9) && (date == 17)) document.write("世界消除贫困日， ");
+if ((month == 9) && (date == 22)) document.write("世界传统医药日， ");
+if ((month == 9) && (date == 24)) document.write("联合国日， ");
+if ((month == 9) && (date == 24)) document.write("世界发展宣传日， ");
+if ((month == 9) && (date == 25)) document.write("抗美援朝纪念日， ");
+if ((month == 9) && (date == 28)) document.write("关注男性生殖健康日， ");
+if ((month == 9) && (date == 31)) document.write("世界勤俭日， ");
+if ((month == 10) && (date == 1)) document.write("植树造林日， ");
+if ((month == 10) && (date == 6)) document.write("防止战争和武装冲突糟蹋环境国际日， ");
+if ((month == 10) && (date == 7)) document.write("苏联十月革命纪念日， ");
+if ((month == 10) && (date == 8)) document.write("中国记者节， ");
+if ((month == 10) && (date == 9)) document.write("中国消防宣传日， ");
+if ((month == 10) && (date == 10)) document.write("世界青年日， ");
+if ((month == 10) && (date == 12)) document.write("刘少奇逝世纪念日， ");
+if ((month == 10) && (date == 12)) document.write("孙中山诞辰纪念日， ");
+if ((month == 10) && (date == 14)) document.write("世界糖尿病日， ");
+if ((month == 10) && (date == 16)) document.write("国际容忍日， ");
+if ((month == 10) && (date == 17)) document.write("国际大学生日， ");
+if ((month == 10) && (date == 20)) document.write("非洲工业化日， ");
+if ((month == 10) && (date == 20)) document.write("国际儿童日， ");
+if ((month == 10) && (date == 21)) document.write("世界电视日， ");
+if ((month == 10) && (date == 21)) document.write("世界问候日， ");
+if ((month == 10) && (date == 24)) document.write("刘少奇诞辰纪念日， ");
+if ((month == 10) && (date == 25)) document.write("消除对妇女的暴力行为国际日， ");
+if ((month == 10) && (date == 28)) document.write("恩格斯诞辰纪念日， ");
+if ((month == 10) && (date == 29)) document.write("声援巴勒斯坦人民国际日， ");
+if ((month == 11) && (date == 1)) document.write("世界艾滋病日， ");
+if ((month == 11) && (date == 2)) document.write("废除奴隶制国际日， ");
+if ((month == 11) && (date == 3)) document.write("世界残疾人日， ");
+if ((month == 11) && (date == 4)) document.write("中国法制宣传日， ");
+if ((month == 11) && (date == 5)) document.write("促进经济和社会发展自愿人员国际日， ");
+if ((month == 11) && (date == 5)) document.write("世界强化免疫日， ");
+if ((month == 11) && (date == 5)) document.write("世界弱能人士日， ");
+if ((month == 11) && (date == 7)) document.write("国际民航日， ");
+if ((month == 11) && (date == 9)) document.write("“一二九”运动纪念日， ");
+if ((month == 11) && (date == 9)) document.write("国际反腐败日， ");
+if ((month == 11) && (date == 10)) document.write("世界人权日， ");
+if ((month == 11) && (date == 11)) document.write("世界防治哮喘日， ");
+if ((month == 11) && (date == 12)) document.write("西安事变纪念日， ");
+if ((month == 11) && (date == 13)) document.write("南京大屠杀纪念日， ");
+if ((month == 11) && (date == 18)) document.write("国际移徙者日， ");
+if ((month == 11) && (date == 20)) document.write("澳门回归纪念日， ");
+if ((month == 11) && (date == 21)) document.write("国际篮球日， ");
+if ((month == 11) && (date == 25)) document.write("西方圣诞节， ");
+if ((month == 11) && (date == 26)) document.write("毛泽东诞辰纪念日， ");
+if ((month == 11) && (date == 29)) document.write("生物多样性国际日， ");
+//自定义节日
+if ((month == 1) && (date == 4)) document.write("本网页完成日（庆祝一下，嘻嘻）");
+if ((month == 0) && (date == 16)) document.write("今天是我们爱的纪念日！小杰杰❤大涛涛");
+if ((month == 1) && (date == 17)) document.write("亲爱的大涛涛生日快乐！");
+if ((month == 11) && (date == 2)) document.write("今天是小杰杰生日哦~");
+document.write("<br></font>");
+//-->
+</SCRIPT>        
+</head>
+    <body>
+    		             
+        <div id="main">
+              <div id="wrap">
+                <div id="text">
+<div id="code">
+<font>
+<span class="say">亲爱的大涛涛，</span><br>
+<span class="say"> </span><br>
+<span class="say">虽然我不会甜言蜜语，但我会用实际行动</span><br>
+<span class="say"></span><br>
+<strong>守护着妳！</strong><br><br>
+<span class="say">这棵树</span><br><br>
+<span class="say">就是我们的爱</span><br><br>
+<span class="say">妳愿意和我一起细心栽培这棵树吗？</span><br>
+<span class="say"> </span><br>
+<span class="say"><span class="space"></span>-- 小杰杰</span>
+</font></p>
+</div>
+</div>
+<div id="clock-box">
+<span class="STYLE1"></span><font color="#33CC00">下面是我们手牵着手共同</font>
+<span class="STYLE1">走过的时间……</span>
+<div id="clock"></div>
+</div>
+<canvas id="canvas" width="1100" height="680"></canvas>
+</div>           
+</div>   
+<script>
+</script>
+<script>
+    (function(){
+        var canvas = $('#canvas');
+		
+        if (!canvas[0].getContext) {
+            $("#error").show();
+            return false;        }
+
+        var width = canvas.width();
+        var height = canvas.height();        
+        canvas.attr("width", width);
+        canvas.attr("height", height);
+        var opts = {
+            seed: {
+                x: width / 2 - 20,
+                color: "rgb(190, 26, 37)",
+                scale: 2
+            },
+            branch: [
+                [535, 680, 570, 250, 500, 200, 30, 100, [
+                    [540, 500, 455, 417, 340, 400, 13, 100, [
+                        [450, 435, 434, 430, 394, 395, 2, 40]
+                    ]],
+                    [550, 445, 600, 356, 680, 345, 12, 100, [
+                        [578, 400, 648, 409, 661, 426, 3, 80]
+                    ]],
+                    [539, 281, 537, 248, 534, 217, 3, 40],
+                    [546, 397, 413, 247, 328, 244, 9, 80, [
+                        [427, 286, 383, 253, 371, 205, 2, 40],
+                        [498, 345, 435, 315, 395, 330, 4, 60]
+                    ]],
+                    [546, 357, 608, 252, 678, 221, 6, 100, [
+                        [590, 293, 646, 277, 648, 271, 2, 80]
+                    ]]
+                ]] 
+            ],
+            bloom: {
+                num: 700,
+                width: 1080,
+                height: 650,
+            },
+            footer: {
+                width: 1200,
+                height: 5,
+                speed: 10,
+            }
+        }
+
+        var tree = new Tree(canvas[0], width, height, opts);
+        var seed = tree.seed;
+        var foot = tree.footer;
+        var hold = 1;
+
+        canvas.click(function(e) {
+            var offset = canvas.offset(), x, y;
+            x = e.pageX - offset.left;
+            y = e.pageY - offset.top;
+            if (seed.hover(x, y)) {
+                hold = 0; 
+                canvas.unbind("click");
+                canvas.unbind("mousemove");
+                canvas.removeClass('hand');
+            }
+        }).mousemove(function(e){
+            var offset = canvas.offset(), x, y;
+            x = e.pageX - offset.left;
+            y = e.pageY - offset.top;
+            canvas.toggleClass('hand', seed.hover(x, y));
+        });
+
+        var seedAnimate = eval(Jscex.compile("async", function () {
+            seed.draw();
+            while (hold) {
+                $await(Jscex.Async.sleep(10));
+            }
+            while (seed.canScale()) {
+                seed.scale(0.95);
+                $await(Jscex.Async.sleep(10));
+            }
+            while (seed.canMove()) {
+                seed.move(0, 2);
+                foot.draw();
+                $await(Jscex.Async.sleep(10));
+            }
+        }));
+
+        var growAnimate = eval(Jscex.compile("async", function () {
+            do {
+    	        tree.grow();
+                $await(Jscex.Async.sleep(10));
+            } while (tree.canGrow());
+        }));
+
+        var flowAnimate = eval(Jscex.compile("async", function () {
+            do {
+    	        tree.flower(2);
+                $await(Jscex.Async.sleep(10));
+            } while (tree.canFlower());
+        }));
+
+        var moveAnimate = eval(Jscex.compile("async", function () {
+            tree.snapshot("p1", 240, 0, 610, 680);
+            while (tree.move("p1", 500, 0)) {
+                foot.draw();
+                $await(Jscex.Async.sleep(10));
+            }
+            foot.draw();
+            tree.snapshot("p2", 500, 0, 610, 680);
+
+            // 会有闪烁不得意这样做, (＞﹏＜)
+            canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
+            canvas.css("background", "#ffe");
+            $await(Jscex.Async.sleep(300));
+            canvas.css("background", "none");
+        }));
+
+        var jumpAnimate = eval(Jscex.compile("async", function () {
+            var ctx = tree.ctx;
+            while (true) {
+                tree.ctx.clearRect(0, 0, width, height);
+                tree.jump();
+                foot.draw();
+                $await(Jscex.Async.sleep(25));
+            }
+        }));
+
+        var textAnimate = eval(Jscex.compile("async", function () {
+		    var together = new Date();
+		    together.setFullYear(2013,12,16); 			//时间年月日（实际要减一个月的）
+		    together.setHours(0);						//小时	
+		    together.setMinutes(0);					//分钟
+		    together.setSeconds(0);					//秒前一位
+		    together.setMilliseconds(2);				//秒第二位
+
+		    $("#code").show().typewriter();
+            $("#clock-box").fadeIn(500);
+            while (true) {
+                timeElapse(together);
+                $await(Jscex.Async.sleep(1000));
+            }
+        }));
+
+        var runAsync = eval(Jscex.compile("async", function () {
+            $await(seedAnimate());
+            $await(growAnimate());
+            $await(flowAnimate());
+            $await(moveAnimate());
+
+            textAnimate().start();
+
+            $await(jumpAnimate());
+        }));
+
+        runAsync().start();
+    })();
+    </script>
+    <embed src="http://pan.decadework.com/up/2014/9/13/2014091314195400525.mp3" width=8 height=8 type=audio/mpeg volume="0" loop="-1" autostart="0"> </embed> <!--音乐地址-->
+</body>
+</html>
